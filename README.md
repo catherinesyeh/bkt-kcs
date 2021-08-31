@@ -1,3 +1,3 @@
 ## bkt-kcs
 
-Interactive Flow Chart of Knowledge Components for Bayesian Knowledge Tracing.
+Interactive Flow Chart of Knowledge Components for Bayesian Knowledge Tracing: https://catherinesyeh.github.io/bkt-kcs/
