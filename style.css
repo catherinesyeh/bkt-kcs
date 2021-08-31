@@ -1,0 +1,129 @@
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+}
+
+@keyframes fadeInActivate {
+    to {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 0;
+    pointer-events: none;
+    animation: fadeInActivate 1.5s ease forwards;
+    font-family: Poppins;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s;
+    color: firebrick;
+}
+
+a:hover {
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    position: fixed;
+    z-index: 99999;
+    background-color: white;
+    font-family: Roboto Mono;
+}
+
+.button {
+    background-color: black;
+    padding: calc(10px + 0.5vw) calc(8px + 0.4vw);
+    color: white;
+    font-size: calc(8px + 0.4vw);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.5s;
+    align-items: center;
+    display: grid;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button.selected {
+    font-weight: bold;
+    opacity: 1;
+    pointer-events: none;
+}
+
+#intro {
+    padding: 80px 40px 40px;
+    transition: 0.5s;
+    background-color: antiquewhite;
+}
+
+#flowchart {
+    transition: 0.5s;
+    width: 100%;
+    height: auto;
+}
+
+#flowchart path, #flowchart rect, #flowchart line {
+    transition: 0.5s;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+footer {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: auto auto;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+footer p {
+    font-size: small;
+    font-style: italic;
+}
+
+#top {
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: right;
+    align-items: center;
+}
+
+#top:hover {
+    transform: translateY(-5px);
+    color: firebrick;
+    opacity: 1;
+}
